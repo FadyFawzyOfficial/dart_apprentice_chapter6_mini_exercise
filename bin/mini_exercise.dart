@@ -7,6 +7,17 @@ void main() {}
 ///
 /// Create a class called `Password` and give it a string property
 /// called `value`.
+
+// class Password {
+//   String value = '';
+// }
+
+/// Dart classes: Mini-exercise 2
+///
+/// Override the `toString` method of `Password` so that it prints `value`.
 class Password {
   String value = '';
+
+  @override
+  String toString() => 'Password(value: $value)';
 }
