@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 void main() {}
 
 /// Dart classes
@@ -28,11 +27,27 @@ void main() {}
 /// Add a method to `Password` called `isValid` that returns `true` only
 /// if the length of `value` is greater than `8`.
 
+// class Password {
+//   String value = '';
+
+//   bool get isValid => value.length > 8;
+
+//   @override
+//   String toString() => 'Password(value: $value)';
+// }
+
+/// Constructors
+///
+/// Constructors: Mini-exercise 1
+///
+/// Given the following class:
+/// ```
+/// class Password {
+///   String value = '';
+/// }
+/// ```
+/// Make `value` a `final` variable, but not private.
+
 class Password {
-  String value = '';
-
-  bool get isValid => value.length > 8;
-
-  @override
-  String toString() => 'Password(value: $value)';
+  final value = '';
 }
