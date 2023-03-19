@@ -48,6 +48,17 @@ void main() {}
 /// ```
 /// Make `value` a `final` variable, but not private.
 
+// class Password {
+//   final value = '';
+// }
+
+/// Constructors: Mini-exercise 2
+///
+/// Add a `const` constructor as the only way to initialize a
+/// `Password` object.
+
 class Password {
-  final value = '';
+  final String value;
+
+  const Password({this.value = ''});
 }
